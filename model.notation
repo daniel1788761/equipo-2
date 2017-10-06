@@ -372,7 +372,7 @@
     <children xmi:type="notation:Shape" xmi:id="_kJuhMKfkEee4he42CZr5hg" type="Comment_Shape">
       <children xmi:type="notation:DecorationNode" xmi:id="_kJuhMqfkEee4he42CZr5hg" type="Comment_BodyLabel"/>
       <element xmi:type="uml:Comment" href="model.uml#_kIZEcKfkEee4he42CZr5hg"/>
-      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_kJuhMafkEee4he42CZr5hg" x="618" y="143" width="141" height="25"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_kJuhMafkEee4he42CZr5hg" x="614" y="119" width="141" height="25"/>
     </children>
     <children xmi:type="notation:Shape" xmi:id="_qrHxoKfkEee4he42CZr5hg" type="Comment_Shape">
       <children xmi:type="notation:DecorationNode" xmi:id="_qrHxoqfkEee4he42CZr5hg" type="Comment_BodyLabel"/>

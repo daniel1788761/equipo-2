@@ -23,20 +23,22 @@
         <body>requerimiento de errores del odo</body>
       </ownedComment>
       <packagedElement xmi:type="uml:Class" xmi:id="_LFdhoKSmEeeg1IF4q3rsUA" name="Distancia"/>
-      <packagedElement xmi:type="uml:Class" xmi:id="_SVv4YKSmEeeg1IF4q3rsUA" name="Muestreo">
+      <packagedElement xmi:type="uml:Class" xmi:id="_SVv4YKSmEeeg1IF4q3rsUA" name="Muestreo" isLeaf="true">
         <ownedTemplateSignature xmi:type="uml:RedefinableTemplateSignature" xmi:id="_HI3BwKfeEee4he42CZr5hg" name="RedefinableTemplateSignature1"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_ZAn08KSmEeeg1IF4q3rsUA" name="Incremento"/>
       <packagedElement xmi:type="uml:Class" xmi:id="_fO8_cKSmEeeg1IF4q3rsUA" name="Retroceso "/>
       <packagedElement xmi:type="uml:Class" xmi:id="_pOcucKSmEeeg1IF4q3rsUA" name="Error"/>
       <packagedElement xmi:type="uml:Class" xmi:id="_v_F70KSmEeeg1IF4q3rsUA" name="Valores"/>
-      <packagedElement xmi:type="uml:Class" xmi:id="_3QqE8KSmEeeg1IF4q3rsUA" name="Trip"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_3QqE8KSmEeeg1IF4q3rsUA" name="Trip" isLeaf="true"/>
       <packagedElement xmi:type="uml:Abstraction" xmi:id="__-rTAKfdEee4he42CZr5hg" name="desplega" client="_LFdhoKSmEeeg1IF4q3rsUA" supplier="_SVv4YKSmEeeg1IF4q3rsUA"/>
       <packagedElement xmi:type="uml:Abstraction" xmi:id="_rRy-0KfeEee4he42CZr5hg" name="chek error" client="_ZAn08KSmEeeg1IF4q3rsUA" supplier="_SVv4YKSmEeeg1IF4q3rsUA"/>
       <packagedElement xmi:type="uml:Abstraction" xmi:id="__ZodgKfjEee4he42CZr5hg" name="descrip odo" client="_SVv4YKSmEeeg1IF4q3rsUA" supplier="_fO8_cKSmEeeg1IF4q3rsUA"/>
       <packagedElement xmi:type="uml:Abstraction" xmi:id="_EuKSMKfkEee4he42CZr5hg" name="des. error" client="_SVv4YKSmEeeg1IF4q3rsUA" supplier="_pOcucKSmEeeg1IF4q3rsUA"/>
       <packagedElement xmi:type="uml:Abstraction" xmi:id="_RGwmkKfkEee4he42CZr5hg" name="legible" client="_SVv4YKSmEeeg1IF4q3rsUA" supplier="_v_F70KSmEeeg1IF4q3rsUA"/>
       <packagedElement xmi:type="uml:Abstraction" xmi:id="_W564AKfkEee4he42CZr5hg" name="trip" client="_SVv4YKSmEeeg1IF4q3rsUA" supplier="_3QqE8KSmEeeg1IF4q3rsUA"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_dpLmEK1aEeeZrsjkjTbp_w" name="Requirement1"/>
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="_35FogK1aEeeZrsjkjTbp_w" name="check " client="_ZAn08KSmEeeg1IF4q3rsUA" supplier="_dpLmEK1aEeeZrsjkjTbp_w"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_OTqqYKSjEeeg1IF4q3rsUA" name="indicadores">
       <packagedElement xmi:type="uml:Class" xmi:id="_5-FfEKSnEeeg1IF4q3rsUA" name="Sensor1"/>
@@ -118,13 +120,13 @@
   <Requirements:Requirement xmi:id="_l8fq8KSlEeeg1IF4q3rsUA" base_Class="_l8Ur0KSlEeeg1IF4q3rsUA" id="Aguja" text="Delimitar entre 0 y 140 kph"/>
   <Requirements:Requirement xmi:id="_vnlQMKSlEeeg1IF4q3rsUA" base_Class="_vnbfMKSlEeeg1IF4q3rsUA" id="500" text="La latencia debe ser igual o menor que 500 ms"/>
   <Requirements:Requirement xmi:id="_2fF6kKSlEeeg1IF4q3rsUA" base_Class="_2e8woKSlEeeg1IF4q3rsUA" id="50" text="Muestreo proveniente de 50 ms"/>
-  <Requirements:Requirement xmi:id="_LFrkEKSmEeeg1IF4q3rsUA" base_Class="_LFdhoKSmEeeg1IF4q3rsUA" id="Total" text="Distancia total se actualiza cada 500 ms&#xD;&#xA;"/>
-  <Requirements:Requirement xmi:id="_SV5pYKSmEeeg1IF4q3rsUA" base_Class="_SVv4YKSmEeeg1IF4q3rsUA" id="ODOMETRO" text="Muestreo de distancia total en el lcd"/>
-  <Requirements:Requirement xmi:id="_ZA3FgKSmEeeg1IF4q3rsUA" base_Class="_ZAn08KSmEeeg1IF4q3rsUA" id="Distancia" text="Actualizar distancia total y grabarla en memoria"/>
-  <Requirements:Requirement xmi:id="_fPGwcKSmEeeg1IF4q3rsUA" base_Class="_fO8_cKSmEeeg1IF4q3rsUA" id="Inferior " text="El software debe asegurar que nunca muestre un velocidad menor a la recorrida"/>
+  <Requirements:Requirement xmi:id="_LFrkEKSmEeeg1IF4q3rsUA" base_Class="_LFdhoKSmEeeg1IF4q3rsUA" id="Total" text="El valor del odómetro (distancia total recorrida) deberá desplegarse en un display LCD, este valor se actualizará en el visualizador cada 500ms.&#xD;&#xA;"/>
+  <Requirements:Requirement xmi:id="_SV5pYKSmEeeg1IF4q3rsUA" base_Class="_SVv4YKSmEeeg1IF4q3rsUA" id="ODOMETRO" text="El odómetro es el elemento encargado de desplegar en KM la distancia recorrida por el vehículo. La importancia de este valor radica en saber que tanto ha sido usado el vehículo.&#xD;&#xA;"/>
+  <Requirements:Requirement xmi:id="_ZA3FgKSmEeeg1IF4q3rsUA" base_Class="_ZAn08KSmEeeg1IF4q3rsUA" id="Distancia" text="Al  recibir la señal de incrementar, la distancia total recorrida es actualizada, después de recibirla y grabarla en memoria.&#xD;&#xA;"/>
+  <Requirements:Requirement xmi:id="_fPGwcKSmEeeg1IF4q3rsUA" base_Class="_fO8_cKSmEeeg1IF4q3rsUA" id="Inferior " text="La distancia total recorrida por el odómetro se debe de mostrar al encender la unidad y nunca se debe de perder su valor."/>
   <Requirements:Requirement xmi:id="_pOmfcKSmEeeg1IF4q3rsUA" base_Class="_pOcucKSmEeeg1IF4q3rsUA" id="Alterado " text="En caso de alterarse el odometro (no es el ultimo dato guardado)marcar error&#xD;&#xA;"/>
-  <Requirements:Requirement xmi:id="_v_RiAKSmEeeg1IF4q3rsUA" base_Class="_v_F70KSmEeeg1IF4q3rsUA" id="ODOTRIP" text="Siempre legibles al usuario al encenderlo"/>
-  <Requirements:Requirement xmi:id="_3Q1EEKSmEeeg1IF4q3rsUA" base_Class="_3QqE8KSmEeeg1IF4q3rsUA" id="Reset" text="El trip debe cumplir con los requisitos del ODO mas un boton de reset"/>
+  <Requirements:Requirement xmi:id="_v_RiAKSmEeeg1IF4q3rsUA" base_Class="_v_F70KSmEeeg1IF4q3rsUA" id="ODOTRIP" text="los valores desplegados por el odómetro y trip odo, deben de ser siempre legibles para el usuario mientras la unidad se encuentre encendida."/>
+  <Requirements:Requirement xmi:id="_3Q1EEKSmEeeg1IF4q3rsUA" base_Class="_3QqE8KSmEeeg1IF4q3rsUA" id="Reset" text="El odómetro cuenta adicionalmente con un medidor de distancia recorrida por viaje llamado trip odo, los requisitos del odómetro aplican también para esta medida, además cuenta con un botón que el usuario puede presionar para poner este valor en cero y hacer una nueva medición.&#xD;&#xA;"/>
   <Requirements:Requirement xmi:id="_HHASkKSnEeeg1IF4q3rsUA" base_Class="_HG16gKSnEeeg1IF4q3rsUA" id="0 y 1" text="Escala a considerar 0 = Vacio a 1 = Lleno"/>
   <Requirements:Requirement xmi:id="_OmPEQKSnEeeg1IF4q3rsUA" base_Class="_OmDeEKSnEeeg1IF4q3rsUA" id="Aguja" text="El nivel de muestreo es mediante agujas "/>
   <Requirements:Requirement xmi:id="_VmA50KSnEeeg1IF4q3rsUA" base_Class="_Vl3I0KSnEeeg1IF4q3rsUA" id="Niveles" text="La escala debe de identificarse 1/4, 1/2, y 3/4"/>
@@ -146,4 +148,6 @@
   <Requirements:DeriveReqt xmi:id="_W6gt4KfkEee4he42CZr5hg" base_DirectedRelationship="_W564AKfkEee4he42CZr5hg" base_Abstraction="_W564AKfkEee4he42CZr5hg"/>
   <ModelElements:Rationale xmi:id="_kI1JUKfkEee4he42CZr5hg" base_Comment="_kIZEcKfkEee4he42CZr5hg"/>
   <ModelElements:Rationale xmi:id="_qqh7wKfkEee4he42CZr5hg" base_Comment="_qqFP0KfkEee4he42CZr5hg"/>
+  <Requirements:Requirement xmi:id="_dqX44K1aEeeZrsjkjTbp_w" base_Class="_dpLmEK1aEeeZrsjkjTbp_w" text="El software debe de asegurar que el odómetro nunca despliegue un valor inferior al ya recorrido, si este valor fuera alterado se debe de mostrar un mensaje de error de distancia de odómetro invalida (99999)."/>
+  <Requirements:DeriveReqt xmi:id="_35htYK1aEeeZrsjkjTbp_w" base_DirectedRelationship="_35FogK1aEeeZrsjkjTbp_w" base_Abstraction="_35FogK1aEeeZrsjkjTbp_w"/>
 </xmi:XMI>
